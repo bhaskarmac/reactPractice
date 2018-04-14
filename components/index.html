@@ -13,14 +13,30 @@
   <div id="app">React app not yet rendered!</div>
 
   <script type="text/babel">
-    var ColorSpectrum = function(){
+    var Red = function(){
       return(
-        <h1>Red, Orange, Yellow</h1>
+        <h1>Red</h1>
       );
-    };
+    }
+
+    var Orange = function(){
+      return(
+        <h1>Orange</h1>
+      );
+    }
+
+    var Yellow = function(){
+      return (
+        <h1>Yellow</h1>
+      );
+    }
 
     ReactDOM.render(
-      <ColorSpectrum/>
+      <div>
+      <Red/>
+      <Orange/>
+      <Yellow/>
+      </div>
       ,
       document.getElementById('app')
     );
