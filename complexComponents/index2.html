@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="../js/react.js"></script>
+  <script src="../js/react-dom.js"></script>
+  <script src="../js/babel.min.js"></script>
+  <title>Class Component</title>
+</head>
+<body>
+  <div id="app">React app not rendered yet!</div>
+
+  <script type="text/babel">
+   class Shape extends React.Component{
+     render(){
+       return(
+        <div>
+   <Circle/>
+   <Square/>
+   <Rectangle/>
+   </div>
+       );
+     }
+   }
+
+   class Circle extends React.Component{
+     render(){
+       return(
+         <h1>Circle</h1>
+       );
+     }
+   }
+
+      class Square extends React.Component{
+     render(){
+       return(
+         <h1>Square</h1>
+       );
+     }
+   }
+
+   class Rectangle extends React.Component{
+     render(){
+       return(
+         <h1>Rectangle</h1>
+       );
+     }
+   }
+
+   ReactDOM.render(<Shape/>, document.getElementById('app'));
+  </script>
+</body>
+</html>
