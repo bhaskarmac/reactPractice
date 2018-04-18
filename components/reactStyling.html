@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="../js/react.js"></script>
+  <script src="../js/react-dom.js"></script>
+  <script src="../js/babel.min.js"></script>
+  <title>react styling</title>
+</head>
+<body>
+  <div id="app">React app not yet rendered!</div>
+
+  <script type="text/babel">
+    var Red = function(){
+      var redStyle = {
+        width: 150,
+  height: 50,
+  backgroundColor: 'red'
+      }
+      return(
+        <h1 style={redStyle}>Red</h1>
+      );
+    }
+
+    var Orange = function(){
+      var orangeStyle = {
+        width: 150,
+  height: 50,
+  backgroundColor: 'orange'
+      }
+      return(
+        <h1 style={orangeStyle}>Orange</h1>
+      );
+    }
+
+    var Yellow = function(){
+      var yellowStyle = {
+        width: 150,
+  height: 50,
+  backgroundColor: 'yellow'
+      }
+      return (
+        <h1 style={yellowStyle}>Yellow</h1>
+      );
+    }
+
+    ReactDOM.render(
+      <div>
+      <Red/>
+      <Orange/>
+      <Yellow/>
+      </div>
+      ,
+      document.getElementById('app')
+    );
+
+  </script>
+</body>
+</html>
