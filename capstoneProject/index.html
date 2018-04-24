@@ -18,8 +18,17 @@
 
     //Friendly
     function Friendly(){
+      var friendlyStyle = {
+        height: 300,
+        width: 200,
+  padding:0,
+  backgroundColor: '#fff',
+  WebkitFilter: 'drop-shadow(0px 0px 5px #555)',
+  filter: 'drop-shadow(0px 0px 5px #555)'
+      };
+
       return(
-        <div>
+        <div style={friendlyStyle}>
         <Avatar/>
         <UserName/>
         <GetConnected/>
@@ -29,15 +38,29 @@
 
     //Avatar 
     function Avatar(){
+      var avatarStyle = {
+        marginLeft: 20,
+        marginTop: 20,
+        height: 150,
+        width: 150,
+        borderRadius: '50%'
+      };
+
       return(
-        <img src="https://pbs.twimg.com/profile_images/561191411949637632/qTIUEvNQ_400x400.jpeg" alt="Profile pic"/>
+        <img src="https://pbs.twimg.com/profile_images/561191411949637632/qTIUEvNQ_400x400.jpeg" style={avatarStyle} alt="Profile pic"/>
       );
     }
 
     //UserName
     function UserName(){
+      var nameStyle = {
+        fontSize: 20,
+        fontFamily: 'verdana',
+        margin: 20
+      };
+
       return(
-        <h1>Profile Name</h1>
+        <h1 style={nameStyle}>Profile Name</h1>
       );
     }
 
@@ -55,21 +78,24 @@
         )
       }
 
+var iconStyle = {
+  margin: 20
+};
       function Like(){
         return(
-          <i className="fa fa-thumbs-o-up" aria-hidden="true"></i>
+          <i style={iconStyle} className="fa fa-thumbs-o-up" aria-hidden="true"></i>
         );
       }
 
             function Share(){
         return(
-          <i className="fa fa-share" aria-hidden="true"></i>
+          <i style={iconStyle} className="fa fa-share" aria-hidden="true"></i>
         );
       }
 
             function Add(){
         return(
-          <i className="fa fa-plus" aria-hidden="true"></i>
+          <i style={iconStyle} className="fa fa-plus" aria-hidden="true"></i>
         );
       }
 
