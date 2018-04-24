@@ -16,12 +16,61 @@
   <script type="text/babel">
 
     //Friendly
+    function Friendly(){
+      return(
+        <div>
+        <Avatar/>
+        <UserName/>
+        <GetConnected/>
+        </div>
+      );
+    }
+
     //Avatar 
+    function Avatar(){
+      return(
+        <img src="https://pbs.twimg.com/profile_images/561191411949637632/qTIUEvNQ_400x400.jpeg" alt="Profile pic"/>
+      );
+    }
+
     //UserName
+    function UserName(){
+      return(
+        <h1>Profile Name</h1>
+      );
+    }
+
     //GetConnected
       //Like
       //Share
       //Add
+      function GetConnected(){
+        return(
+          <div>
+          <Like/>
+          <Share/>
+          <Add/>
+          </div>
+        )
+      }
+
+      function Like(){
+        return(
+          <div></div>
+        );
+      }
+
+            function Share(){
+        return(
+          <div></div>
+        );
+      }
+
+            function Add(){
+        return(
+          <div></div>
+        );
+      }
 
     ReactDOM.render(<Friendly/>, document.getElementById('app'));
   </script>
